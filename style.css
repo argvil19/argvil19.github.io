@@ -1,0 +1,185 @@
+body {
+	background:#000b1f;
+	font-family:'Roboto Condensed', Helvetica;
+	color:white;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	opacity:0.8;
+}
+
+.wrapper {
+	margin:3em 0;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:8px;
+	min-height:100%;
+}
+
+.wrapper h1 {
+	font-size:300%;
+}
+
+.wrapper h4 {
+	margin:1.5em 0;
+}
+
+.photo {
+	border-radius:50%;
+	margin:0 auto;
+}
+
+.mean {
+	display:inline-block;
+	margin-top:40%;
+	max-width:40%;
+}
+
+.main {
+	margin-bottom:3em;
+}
+
+.wrapper-social {
+	text-align:center;
+}
+
+.wrapper-social ul {
+	padding:0;
+}
+
+.wrapper-social li {
+	display:inline-block;
+	list-style-type:none;
+	margin:0 1em;
+	font-size:2em;
+}
+
+.sicon {
+	transition: transform 0.8s, color 0.5s;
+	color:white !important;
+}
+
+.sicon:hover {
+	transform:rotate(360deg) scale(2);
+}
+
+#github:hover {
+	color:#def;
+}
+
+#twitter:hover {
+	color:#00ACEE;
+}
+
+#linkedin:hover {
+	color:#0177B5;
+}
+
+#mail:hover {
+	color:#FFE377;
+}
+
+.project-wrapper {
+	background-color:#0A0A12;
+	padding:4em;
+	border-top:1px solid #444;
+	border-bottom:1px solid #ddd;
+}
+
+.project-wrapper h3 {
+	margin-left:4em;
+	font-size:200%;
+}
+
+/* -------- GRID ---------- */
+
+	.grid-item {
+		width:30%;
+		margin:1em;
+	}
+	
+	.grid-item img {
+		border-radius:10px;
+		box-shadow:-3px 2px 8px black;
+	}
+	
+	.cover-grid-item {
+		position:absolute;
+		height:100%;
+		width:100%;
+		background-color:black;
+		color:white;
+		text-align:center;
+		opacity:0;
+		transition: opacity 0.5s;
+	}
+	
+	.cover-grid-item:hover {
+		opacity:0.9;
+	}
+
+	.cover-grid-item h4 {
+		padding-top:5%;
+		font-weight:bold;
+	}
+/*----------------------------*/
+
+.workwith {
+	padding:3em 0;
+	background-color:#B82934;
+	margin:0;
+}
+
+.workwith h2 {
+	margin:0 4em;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:300%;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.workwith img {
+	display:inline-block;
+	margin:2em 1em 1em 0;
+}
+
+.aboutme {
+	padding:6em 0;
+	background-color:#F16529;
+	color:#FFF;
+	text-align:justify,
+}
+
+.aboutme img {
+	margin:0 auto;
+}
+
+.aboutme h2 {
+	font-size:300%;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.aboutme p {
+	font-weight:bold;
+}
+
+footer {
+	padding: 2em 1.5em;
+	background-color:#0a0a12;
+	min-height:5em;
+	margin:0;
+}
+
+#hire-me {
+	text-align:center;
+	text-transform:uppercase;
+	color:white;
+	font-size:270%;
+	opacity:1;
+}
+
+.copyright {
+	background-color:black;
+}
