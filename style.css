@@ -63,22 +63,6 @@ p, h1, h2, h3, h4, h5, h6 {
 	transform:rotate(360deg) scale(2);
 }
 
-#github:hover {
-	color:#def;
-}
-
-#twitter:hover {
-	color:#00ACEE;
-}
-
-#linkedin:hover {
-	color:#0177B5;
-}
-
-#mail:hover {
-	color:#FFE377;
-}
-
 .project-wrapper {
 	background-color:#0A0A12;
 	padding:4em;
