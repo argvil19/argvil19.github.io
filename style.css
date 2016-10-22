@@ -87,7 +87,6 @@ p, h1, h2, h3, h4, h5, h6 {
 /* -------- GRID ---------- */
 
 	.grid-item {
-		background-color: transparent;
 		width:30%;
 		margin:1em 1em 1em 0;
 	}
@@ -116,7 +115,6 @@ p, h1, h2, h3, h4, h5, h6 {
 	}
 
 	.cover-grid-item h4 {
-		padding-top:5%;
 		font-weight:bold;
 	}
 /*----------------------------*/
