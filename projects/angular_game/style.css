@@ -1,7 +1,8 @@
 body {
-    font-family:Ubuntu;
-    background-color:#555;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color:black;
+    background:url("./images/bg.jpg") no-repeat center center fixed;
+    background-size:cover;
 }
 
 #eventos {
@@ -11,7 +12,7 @@ body {
     width:70%;
     border:1px solid black;
     border-radius:5px;
-    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
 }
 
 #eventos h1 {
@@ -64,7 +65,7 @@ body {
     height:25%;
     width:95%;
     margin:2%;
-    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
     border-radius:5px;
     border:1px solid black;
 }
@@ -74,7 +75,13 @@ body {
 }
 
 .genStat {
-    text-align:right;
+    text-align:center;
+    color:#9FC1AA;
+}
+
+.genStat h2 {
+	font-weight: bold;	
+	text-shadow: 2px 2px #000;
 }
 
 #logFrame {
