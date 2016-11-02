@@ -1,8 +1,8 @@
 app.factory('gameStatus', function(){
     
     var days = 1;
-    var money = 25;
-    var food = 10;
+    var money = 0;
+    var food = 20;
     var water = 10;
     var foodForMoney = (Math.random() * 100) + 50;
     
