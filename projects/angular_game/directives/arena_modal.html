@@ -1,0 +1,50 @@
+<div class="modal-header">
+    <h3 class="modal-title">Arena</h3>
+</div>
+<div class="modal-body">
+	<div class="alert alert-danger">
+		Elige uno de tus miembros de brigada. Si los puntos de supervivencia se aproximan a alguno de los retadores de arena, podrás proceder con la batalla. Sino, puedes esperar un día para que los contrincantes de la arena roten.
+	</div>
+	
+	<uib-tabset active="active">
+	    <uib-tab index="1" heading="Arena">
+	    	<table class="table">
+	    		<thead>
+	    			<tr>
+					    <th>Nombre</th>
+					    <th>Supervivencia</th>
+					    <th>Acciones</th>
+					</tr>
+	    		</thead>
+	    		<tbody>
+	    			<tr ng-repeat="member in brigade.getBrigade()">
+					    <td class="brigade-member">{{member.name}}</td>
+					    <td class="brigade-member"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="{{(member.survival*100).toFixed(0)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{(member.survival*100).toFixed(0)}}%;"></div></div></td>
+					    <td class="brigade-member"><button class="btn btn-danger" ng-click="member != select.selected? selectMember(member):deselectMember()" ng-disabled="!member.available || select.toggle && member !== select.selected">{{member != select.selected? 'Enviar a la arena':'Deseleccionar'}}</button></td>
+					</tr>
+	    		</tbody>
+	    	</table>
+	    </uib-tab>
+	    <uib-tab index="2" disable="!select.toggle" heading="Contrincantes">
+	    	<table class="table">
+	    		<thead>
+	    			<tr>
+					    <th>Nombre</th>
+					    <th>Supervivencia</th>
+					    <th>Acciones</th>
+					</tr>
+	    		</thead>
+	    		<tbody>
+	    			<tr ng-repeat="member in arena.getFighters()">
+					    <td class="brigade-member">{{member.name}}</td>
+					    <td class="brigade-member"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="{{(member.survival*100).toFixed(0)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{(member.survival*100).toFixed(0)}}%;"></div></div></td>
+					    <td class="brigade-member"><button class="btn btn-warning" ng-click="fight(select.selected, member)" ng-disabled="!checkSurvivalRange(select.selected, member)">Luchar</button></td>
+					</tr>
+	    		</tbody>
+	    	</table>
+	    </uib-tab>
+  	</uib-tabset>
+</div>
+<div class="modal-footer">
+    <button class="btn brigade-close" type="button" ng-click="dissmiss()">Cerrar</button>
+</div>

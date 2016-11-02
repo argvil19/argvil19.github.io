@@ -1,0 +1,157 @@
+body {
+    font-family:Ubuntu;
+    background-color:#555;
+    color:black;
+}
+
+#eventos {
+    position:absolute;
+    margin:2%;
+    height:65%;
+    width:70%;
+    border:1px solid black;
+    border-radius:5px;
+    background-color:#fff;
+}
+
+#eventos h1 {
+    text-align:center;
+    color: #000;
+    margin-left:2%;
+}
+
+#eventos hr {
+    height:0;
+    border:0;
+    border-top:1px solid #000;
+}
+
+#menu-panel {
+    float:right;
+    margin-top:3%;
+    margin-right:2%;
+    text-align:center;
+}
+
+#menu-panel ul {
+    list-style-type:none;
+}
+
+#menu-panel li {
+    margin-bottom:5%;
+    padding:8% 20%;
+    text-transform:uppercase;
+    cursor:pointer;
+    border-radius:5px;
+    border:1px solid black;
+    background-color:#fff;
+    transition: background-color .5s, color .5s;
+}
+
+#menu-panel li:hover {
+    background-color:black;
+    color:white;
+}
+
+#menu-panel hr {
+    border:0;
+    border-top:1px solid rgba(0,0,0,0.3);
+}
+
+#status {
+    position:absolute;
+    bottom:0;
+    height:25%;
+    width:95%;
+    margin:2%;
+    background-color:#fff;
+    border-radius:5px;
+    border:1px solid black;
+}
+
+#status h3 {
+    margin-left:2%;
+}
+
+.genStat {
+    text-align:right;
+}
+
+#logFrame {
+    padding:40px;
+}
+
+
+/* ---------------- Event Log -------------- */
+
+#eventLog ul {
+    list-style-type: none;
+}
+
+.announce {
+    color:#111;
+}
+
+.warning {
+    color:#820000;
+}
+
+.info {
+    color:blue;
+}
+
+.danger {
+    color:#c00;
+}
+
+.success {
+    color:#0e0;
+}
+
+/* ------------------------------------------ */
+
+#brigade {
+    position:absolute;
+    z-index: 1000;
+    left:20%;
+    right:20%;
+    top:30%;
+    border:1px solid black;
+    border-radius:5px;
+    background-color:rgba(200,200,200,0.8);
+}
+
+#brigade ul {
+    list-style-type: none;
+}
+
+#brigade ul li {
+    display:inline-block;
+    margin:0 2em;
+}
+
+.next-day {
+    background-color:#831717 !important;
+    color:white;
+    transition: background-color .5s;
+}
+
+.next-day:hover {
+    background-color:#610505 !important;
+}
+
+/* Brigade Modal */
+
+.brigade-close {
+    background-color:#77311c;
+    color:white;
+}
+
+.brigade-close:hover {
+    background-color:#55100a;
+    color:white;
+}
+
+.margin-tabs {
+    padding-top:1em;
+}

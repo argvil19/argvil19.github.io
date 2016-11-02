@@ -1,0 +1,59 @@
+app.factory('globalActions', ['loggerSvc', 'gameStatus', 'brigade', function(loggerSvc, gameStatus, brigade) {
+
+        var eventTempStack = [];
+        var analyzeEvent = function(event) {
+            var eventIndex = loggerSvc.getOnGoing().indexOf(event);
+            var brigadeMembers, brigadeMemberIndex, food;
+            switch(event.type) {
+                case 'scout':
+                    brigadeMembers = brigade.getBrigade();
+                    brigadeMemberIndex = brigadeMembers.indexOf(event.member);
+                    
+                    /* If member dies during scout */
+                    
+                    if (Math.floor(Math.random() + event.member.survival) < 1) {
+                        eventTempStack.push({type:'danger', message:event.member.name + ' ha sido devorado por zombis mientras hacía scouting.'});
+                        brigade.deleteMember(event.member);
+                    } else {
+                        food = Math.floor(Math.random() * 5) + 5;
+                        brigade.decreaseHealth(brigadeMemberIndex, 20);
+                        gameStatus.increaseFood(food);
+			brigade.changeStatus(event.member, 'En espera');
+
+                        eventTempStack.push({type:'success', message:event.member.name + ' ha regresado de hacer scouting y trajo consigo una cantidad de ' + food + ' de alimento'});
+                    }
+                    
+                    event.finished = 1;
+                    break;
+                    
+                default:
+                    true;
+            }
+        };
+        
+        return {
+            endDay:function() {
+                var onGoing = loggerSvc.getOnGoing();
+
+                loggerSvc.clearLog();
+                
+                for (var i=0;i<loggerSvc.getOnGoing().length;i++) {
+                    analyzeEvent(loggerSvc.getOnGoing()[i]);
+                }
+                
+                
+                loggerSvc.cleanOnGoing();
+                
+                gameStatus.increaseDay();
+                loggerSvc.log({type:'announce', message:'Día ' + gameStatus.getDays()});
+                
+                for (var i=0;i<eventTempStack.length;i++) {
+                    loggerSvc.log(eventTempStack[i]);
+                }
+                
+                eventTempStack.length = 0;
+                
+                brigade.restMembers();
+            }
+        };
+}]);

@@ -1,0 +1,64 @@
+<div class="modal-header">
+    <h3 class="modal-title">Brigada</h3>
+</div>
+<div class="modal-body">
+	<div class="well"><button class="btn btn-primary" ng-click="brigade.sendAllToMission()">Enviar a todos de scouting</button></div>
+	<table class="table">
+	    <thead>
+		<tr>
+		    <th>Nombre</th>
+		    <th>Edad</th>
+		    <th>Supervivencia</th>
+		    <th>Suerte</th>
+		    <th>Carácter</th>
+		    <th>Salud</th>
+		    <th>Estado</th>
+		    <th>Localización</th>
+		    <th>Acciones</th>
+		</tr>
+	    </thead>
+	    <tbody>
+		<tr ng-repeat="member in brigade.getBrigade()">
+		    <td class="brigade-member">
+		    	{{member.name}}
+		    </td>
+		    <td class="brigade-member">
+		    	{{member.age}}
+		    </td>
+		    <td class="brigade-member">
+		    	<div class="progress">
+		    		<div class="progress-bar" role="progressbar" aria-valuenow="{{(member.survival*100).toFixed(0)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{(member.survival*100).toFixed(0)}}%;">
+		    		</div>
+		    	</div>
+		    </td>
+		    <td class="brigade-member">
+		    	<div class="progress">
+		    		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{(member.search*100).toFixed(0)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{(member.search*100).toFixed(0)}}%;"></div>
+		    	</div>
+		    </td>
+		    <td class="brigade-member">
+		    	<div class="progress">
+		    		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{(member.mood*100).toFixed(0)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{(member.mood*100).toFixed(0)}}%;"></div>
+		    	</div>
+		    </td>
+		    <td class="brigade-member">
+		    	{{member.health.toFixed(0)}}
+		    </td>
+		    <td class="brigade-member">
+		    	{{member.status}}
+		    </td>
+		    <td class="brigade-member">
+		    	{{member.located | base}}
+		    </td>
+		    <td class="brigade-member">
+		    	<button class="btn btn-primary" ng-click="brigade.sendToMission(member)" ng-disabled="!member.available">
+		    		Buscar alimento
+		    	</button>
+		    </td>
+		</tr>
+	    </tbody>
+	</table>
+</div>
+<div class="modal-footer">
+    <button class="btn brigade-close" type="button" ng-click="dissmiss()">Cerrar</button>
+</div>
