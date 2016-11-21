@@ -8,7 +8,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #particles {
-	position:absolute;
+	position:fixed;
 	z-index: -1;
 	height:100%;
 	width:100%;
@@ -80,7 +80,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .project-wrapper h3 {
-	margin-left:4em;
+	margin-left:5%;
 	font-size:200%;
 }
 
@@ -117,6 +117,13 @@ p, h1, h2, h3, h4, h5, h6 {
 	.cover-grid-item h4 {
 		font-weight:bold;
 	}
+
+	@media(max-width: 600px) {
+		.grid-item {
+			width:100%;
+			margin:1em 0;
+		}
+	}
 	
 /*----------------------------*/
 
@@ -124,6 +131,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	padding:3em 0;
 	background-color:#B82934;
 	margin:0;
+	text-align: center;
 }
 
 .workwith h2 {
@@ -138,6 +146,18 @@ p, h1, h2, h3, h4, h5, h6 {
 .workwith img {
 	display:inline-block;
 	margin:2em 1em 1em 0;
+}
+
+@media (max-width: 600px) {
+	
+	.workwith h2 {
+		font-size:200%;
+	}
+
+	.workwith img {
+		width:25%;
+	}
+
 }
 
 .aboutme {
@@ -161,6 +181,12 @@ p, h1, h2, h3, h4, h5, h6 {
 	font-weight:bold;
 }
 
+@media (max-width:768px) {
+	.aboutme {
+		text-align: center;
+	}
+}
+
 footer {
 	padding: 2em 1.5em;
 	background-color:#0a0a12;
@@ -178,16 +204,4 @@ footer {
 
 .copyright {
 	background-color:black;
-}
-
-#twitter {
-	color:blue;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width:992px) {
-	.workwith {
-		text-align:center;
-	}
 }
