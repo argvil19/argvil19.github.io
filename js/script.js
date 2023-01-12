@@ -11,7 +11,6 @@ window.onload = function() {
 	});
 	
 	particlesJS('particles', 
-
 		{
     "particles": {
       "number": {
@@ -90,7 +89,7 @@ window.onload = function() {
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 300,
           "line_linked": {
             "opacity": 1
           }
