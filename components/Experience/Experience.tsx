@@ -102,7 +102,7 @@ export default function Experience(props: ExperienceProps) {
                         className={styles.avoid_underline}
                         target="__blank"
                       >
-                        <Card key={project.title} sx={{ width: 345 }}>
+                        <Card key={project.title} sx={{ maxWidth: 345 }}>
                           <CardActionArea>
                             <CardMedia
                               component="img"
