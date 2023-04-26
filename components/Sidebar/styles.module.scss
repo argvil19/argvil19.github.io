@@ -1,0 +1,32 @@
+@import '@/app/variables.scss';
+
+.sidebar {
+  padding: $paperPadding;
+
+  .avatar_title_section {
+    display: flex;
+    flex-direction: column;
+
+    .avatar {
+      border-radius: 50%;
+      align-self: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .social_icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      & > svg {
+        margin-right: 10px;
+        width: 40px;
+        height: 35px;
+        cursor: pointer;
+      }
+    }
+  }
+}

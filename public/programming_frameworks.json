@@ -1,0 +1,62 @@
+[
+  {
+    "name": "TypeScript",
+    "isFeatured": true
+  },
+  {
+    "name": "React",
+    "isFeatured": true
+  },
+  {
+    "name": "Angular",
+    "isFeatured": true
+  },
+  {
+    "name": "JavaScript",
+    "isFeatured": true
+  },
+  {
+    "name": "React Native",
+    "isFeatured": false
+  },
+  {
+    "name": "NodeJS",
+    "isFeatured": false
+  },
+  {
+    "name": "NextJS",
+    "isFeatured": false
+  },
+  {
+    "name": "NestJS",
+    "isFeatured": false
+  },
+  {
+    "name": "GraphQL",
+    "isFeatured": false
+  },
+  {
+    "name": "Express",
+    "isFeatured": false
+  },
+  {
+    "name": "Ionic",
+    "isFeatured": false
+  },
+  {
+    "name": "Electron",
+    "isFeatured": false
+  },
+  {
+    "name": "Web3",
+    "isFeatured": false
+  },
+  {
+    "name": "CMS",
+    "isFeatured": false
+  },
+  {
+    "name": "Relational/Non-Relational DBs",
+    "isFeatured": false
+  }
+]

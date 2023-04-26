@@ -1,0 +1,16 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+@import './variables.scss';
+
+body {  
+  font-family: $fontFamily;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 10vh 10vw;
+  }
+}

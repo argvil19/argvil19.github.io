@@ -1,0 +1,10 @@
+@import '@/app/variables.scss';
+
+.container {
+  padding: $paperPadding;
+}
+
+.avoid_underline {
+  text-decoration: none;
+  color: inherit;
+}
