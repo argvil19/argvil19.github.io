@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useId, useRef } from 'react'
+import { memo, useCallback, useId } from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import styles from './styles.module.css'
@@ -63,7 +63,7 @@ const options = {
   detectRetina: true
 }
 
-export default function ParticlesComponent() {
+const ParticlesComponent = memo(() => {
   const id = useId()
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine)
@@ -78,4 +78,6 @@ export default function ParticlesComponent() {
       />
     </>
   )
-}
+})
+
+export default ParticlesComponent
