@@ -18,27 +18,8 @@ import Link from 'next/link'
 import ControlPointIcon from '@mui/icons-material/ControlPoint'
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline'
 import { useState } from 'react'
-
-interface Company {
-  title: string
-  jobTitle: string
-  companyUrl: string
-  startDate: string
-  endDate: string
-  description: string
-  activeProjects: ActiveProject[]
-}
-
-interface ActiveProject {
-  title: string
-  url: string
-  description: string
-  img: string
-}
-
-interface ExperienceProps {
-  data: Company[]
-}
+import { ExperienceProps, Company, ActiveProject } from '../interfaces'
+import ProjectCard from '../ProjectCard/ProjectCard'
 
 export default function Experience(props: ExperienceProps) {
   const [openedProjects, setOpenedProjects] = useState<number[]>([])
@@ -102,31 +83,7 @@ export default function Experience(props: ExperienceProps) {
                         className={styles.avoid_underline}
                         target="__blank"
                       >
-                        <Card key={project.title} sx={{ maxWidth: 345 }}>
-                          <CardActionArea>
-                            <CardMedia
-                              component="img"
-                              height="140"
-                              image={project.img}
-                              alt={project.title}
-                            ></CardMedia>
-                            <CardContent>
-                              <Typography
-                                gutterBottom
-                                variant="h5"
-                                component="div"
-                              >
-                                {project.title}
-                              </Typography>
-                              <Typography
-                                variant="body2"
-                                color="text.secondary"
-                              >
-                                {project.description}
-                              </Typography>
-                            </CardContent>
-                          </CardActionArea>
-                        </Card>
+                        <ProjectCard {...project} />
                       </Link>
                     </Grid>
                   ))}
