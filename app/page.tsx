@@ -1,5 +1,6 @@
 import AboutMe from '@/components/AboutMe/AboutMe'
 import Experience from '@/components/Experience/Experience'
+// import OtherProjects from '@/components/OtherProjects/OtherProjects'
 import experienceData from '@/public/experience.json'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <AboutMe />
       <Experience data={experienceData} />
+      {/*<OtherProjects />*/}
     </>
   )
 }

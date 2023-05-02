@@ -1,10 +1,6 @@
 'use client'
 import {
   Box,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
   Chip,
   Divider,
   Grid,
@@ -37,7 +33,7 @@ export default function Experience(props: ExperienceProps) {
   }
 
   return (
-    <Paper elevation={3} className={styles.container}>
+    <Paper elevation={3} className={styles.container} sx={{ mb: 3 }}>
       <Typography variant="h2">Experience</Typography>
 
       <Divider sx={{ mb: 3, mt: 3 }} />
