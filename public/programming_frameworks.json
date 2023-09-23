@@ -50,13 +50,5 @@
   {
     "name": "Web3",
     "isFeatured": false
-  },
-  {
-    "name": "CMS",
-    "isFeatured": false
-  },
-  {
-    "name": "Relational/Non-Relational DBs",
-    "isFeatured": false
   }
 ]
