@@ -1,5 +1,14 @@
 [
   {
+    "title": "Mercadolibre",
+    "jobTitle": "Ssr Front End Developer",
+    "companyUrl": "https://ads.mercadolibre.cl/",
+    "startDate": "June 2023",
+    "endDate": "Present",
+    "description": "Part of Mercadolibre Ads team. Using React, SSR, Sass and other tools to build a great user experience.",
+    "activeProjects": []
+  },
+  {
     "title": "Blockchain Foundry",
     "jobTitle": "Full Stack Web3 Developer",
     "companyUrl": "https://blockchainfoundry.com/",
