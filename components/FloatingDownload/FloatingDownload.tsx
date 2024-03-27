@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { FloatingDownloadProps } from '../interfaces'
 
 export default function FloatingDownload({ url }: FloatingDownloadProps) {
-  console.log(styles)
   return (
     <Link href={url} target="_blank" className={styles['floating-button']}>
       <Avatar>
