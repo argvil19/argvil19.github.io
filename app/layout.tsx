@@ -53,7 +53,6 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         <div></div>
-        <ParticlesComponent />
         <MainLayout>{children}</MainLayout>
       </body>
     </html>

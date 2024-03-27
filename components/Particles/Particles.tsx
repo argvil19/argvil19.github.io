@@ -15,7 +15,7 @@ const options = {
   interactivity: {
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: 'push'
       },
       resize: true
