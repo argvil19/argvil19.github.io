@@ -18,3 +18,7 @@ export interface ActiveProject {
 export interface ExperienceProps {
   data: Company[]
 }
+
+export interface FloatingDownloadProps {
+  url: string
+}
