@@ -1,4 +1,3 @@
-import ParticlesComponent from '@/components/Particles/Particles'
 import './globals.scss'
 import { Inter } from 'next/font/google'
 import MainLayout from '@/components/MainLayout'
