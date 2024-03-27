@@ -1,11 +1,11 @@
 export interface Company {
   title: string
-  jobTitle: string
-  companyUrl: string
-  startDate: string
-  endDate: string
+  jobTitle?: string
+  url: string
+  startDate?: string
+  endDate?: string
   description: string
-  activeProjects: ActiveProject[]
+  activeProjects?: ActiveProject[]
 }
 
 export interface ActiveProject {

@@ -2,7 +2,7 @@
   {
     "title": "Mercadolibre",
     "jobTitle": "Ssr Front End Developer",
-    "companyUrl": "https://ads.mercadolibre.cl/",
+    "url": "https://ads.mercadolibre.cl/",
     "startDate": "June 2023",
     "endDate": "Present",
     "description": "Part of Mercadolibre Ads team. Using React, SSR, Sass and other tools to build a great user experience.",
@@ -11,7 +11,7 @@
   {
     "title": "Blockchain Foundry",
     "jobTitle": "Full Stack Web3 Developer",
-    "companyUrl": "https://blockchainfoundry.com/",
+    "url": "https://blockchainfoundry.com/",
     "startDate": "October 2019",
     "endDate": "December 2022",
     "description": "Lead dev at NFKeys, LODE Wallet and FoundrySwap. Actively participated in development and technical discussion for Metacademy and LastKnown projects. Actively acted as code reviewer in most company projects.",
@@ -51,7 +51,7 @@
   {
     "title": "Webgains",
     "jobTitle": "Full Stack Developer",
-    "companyUrl": "https://www.webgains.com/",
+    "url": "https://www.webgains.com/",
     "startDate": "April 2017",
     "endDate": "October 2019",
     "description": "Developed and maintained frontend codebase using React, while making contributions to backend development. Improved development practices and introduced the usage of modern tools for an affiliate marketing app using React/Laravel/MySQL stack.",
@@ -67,7 +67,7 @@
   {
     "title": "Thrifa",
     "jobTitle": "Full Stack Developer",
-    "companyUrl": "https://www.thrifa.io/",
+    "url": "https://www.thrifa.io/",
     "startDate": "August 2016",
     "endDate": "April 2017",
     "description": "MERN stack consultant and Lead Developer for Masterminer and Syscoin Fusion Wallet. The development of these two apps earned me some recognition within the Syscoin community which led me to opportunities within the Blockchain space.",

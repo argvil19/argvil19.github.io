@@ -42,7 +42,7 @@ export default function Experience(props: ExperienceProps) {
         <Box key={company.title} mb={5}>
           <Typography variant="h4" sx={{ mb: 1 }}>
             {company.title}
-            <Link href={company.companyUrl}>
+            <Link href={company.url} target="_blank">
               <LinkIcon style={{ position: 'relative', top: 4, left: 5 }} />
             </Link>
           </Typography>
@@ -57,7 +57,7 @@ export default function Experience(props: ExperienceProps) {
             {company.description}
           </Typography>
 
-          {company.activeProjects.length > 0 && (
+          {company.activeProjects!.length > 0 && (
             <>
               <Typography variant="h6" sx={{ mb: 1 }}>
                 Projects{' '}
@@ -72,7 +72,7 @@ export default function Experience(props: ExperienceProps) {
 
               <Grid container spacing={2}>
                 {isProjectsOpened(ind) &&
-                  company.activeProjects.map((project: ActiveProject) => (
+                  company.activeProjects!.map((project: ActiveProject) => (
                     <Grid item>
                       <Link
                         href={project.url}
