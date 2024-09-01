@@ -1,12 +1,20 @@
 [
   {
-    "title": "Simon",
-    "description": "",
-    "url": ""
+    "title": "Haka - Planning Poker",
+    "jobTitle": "Collaboration app",
+    "description": "Free estimation tool for development teams to aid sprint planning sessions.",
+    "url": "https://hakapoker.club"
   },
   {
     "title": "Conway's Game of Life",
-    "description": "",
-    "url": ""
+    "jobTitle": "RIP JHC",
+    "description": "Web implementation of Conway's game of life written in plain JS.",
+    "url": "https://codepen.io/argvil19/pen/Xjbped"
+  },
+  {
+    "title": "Shape Attack",
+    "jobTitle": "Browser game",
+    "description": "My attempt of adding gameplay to a bunch of random containers. Use the keyboard arrows to avoid the red squares.",
+    "url": "https://codepen.io/argvil19/pen/wGRGNJ"
   }
 ]

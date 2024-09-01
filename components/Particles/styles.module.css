@@ -1,3 +1,7 @@
 .particles_container canvas {
   z-index: -999 !important;
 }
+
+.particles_container {
+  position: absolute;
+}

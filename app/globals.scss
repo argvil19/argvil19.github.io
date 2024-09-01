@@ -5,8 +5,9 @@
 
 @import './variables.scss';
 
-body {  
+body {
   font-family: $fontFamily;
+  background: #333e4f;
 }
 
 @media screen and (min-width: 768px) {
