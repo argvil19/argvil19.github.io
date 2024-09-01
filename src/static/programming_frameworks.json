@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Languages & Frameworks",
+    "skills": [
+      { "name": "TypeScript", "isFeatured": true },
+      { "name": "JavaScript", "isFeatured": true },
+      { "name": "React", "isFeatured": true },
+      { "name": "Angular", "isFeatured": true },
+      { "name": "NodeJS", "isFeatured": true },
+      { "name": "NestJS", "isFeatured": true },
+      { "name": "Express", "isFeatured": true },
+      { "name": "Ionic", "isFeatured": true },
+      { "name": "Electron", "isFeatured": false },
+      { "name": "React Native", "isFeatured": false },
+      { "name": "NextJS", "isFeatured": false }
+    ]
+  },
+  {
+    "title": "APIs & Protocols",
+    "skills": [
+      { "name": "REST", "isFeatured": true },
+      { "name": "GraphQL", "isFeatured": true },
+      { "name": "WebSockets", "isFeatured": true },
+      { "name": "Web3", "isFeatured": false }
+    ]
+  },
+  {
+    "title": "Databases",
+    "skills": [
+      { "name": "MongoDB", "isFeatured": true },
+      { "name": "SQL", "isFeatured": true },
+      { "name": "Firestore", "isFeatured": false },
+      { "name": "PostgreSQL", "isFeatured": false }
+    ]
+  },
+  {
+    "title": "Styling & UI",
+    "skills": [
+      { "name": "CSS & SASS", "isFeatured": true },
+      { "name": "Material UI", "isFeatured": false },
+      { "name": "Tailwind CSS", "isFeatured": false }
+    ]
+  },
+  {
+    "title": "Tools & Methodologies",
+    "skills": [
+      { "name": "TDD & Testing Tools", "isFeatured": true },
+      { "name": "Jest", "isFeatured": true },
+      { "name": "Mocha", "isFeatured": true },
+      { "name": "Chai", "isFeatured": true },
+      { "name": "Git", "isFeatured": true },
+      { "name": "Agile", "isFeatured": true },
+      { "name": "Scrum", "isFeatured": true },
+      { "name": "Docker", "isFeatured": false },
+      { "name": "Cucumber", "isFeatured": false },
+      { "name": "WebdriverIO", "isFeatured": false }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Programming Languages & Frameworks",
+    "skills": [
+      { "name": "Java", "isFeatured": false },
+      { "name": "Spring Boot", "isFeatured": false }
+    ]
+  }
+]

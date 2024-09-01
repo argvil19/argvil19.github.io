@@ -1,6 +1,6 @@
 import { Avatar, Paper, Typography } from '@mui/material'
 import SocialIcons from '../SocialIcons/SocialIcons'
-import styles from '@/components/Sidebar/styles.module.scss'
+import styles from '@/src/components/Sidebar/styles.module.scss'
 
 interface PersonalProps {
   name: string

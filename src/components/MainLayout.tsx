@@ -1,6 +1,6 @@
 'use client'
 import Grid from '@mui/material/Grid'
-import Sidebar from '@/components/Sidebar/Sidebar'
+import Sidebar from '@/src/components/Sidebar/Sidebar'
 
 export default function MainLayout({
   children
